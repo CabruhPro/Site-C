@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="mockup.css">
     </head>
     <body style="display: flex; justify-content: center;">
-        <div id="main" style="height: 100%; width: 80%; display: flex; flex-direction: column; border:1px solid blue; align-self: center;">
+        <main>
             <div id="account" style="display: flex;" >
-                <img id="prof_pic" src="images/user-profile-avatar-svgrepo-com.svg" alt="prof_pic.svg" style="height: 100px; width: 100px;">
+                <img id="prof_pic" src="images/user-profile-avatar-svgrepo-com.svg" alt="prof_pic.svg" style="width: 5em; margin-right: 0.75em">
                 <div id="profile_info" style="display: flex; flex-direction: column; justify-content: space-around;"><strong style="font-size: x-large;">Cabruh</strong><br>Current Location
                     <div style="display: flex; justify-content: space-between;">
                         <div>Cards Collected</div>
@@ -19,38 +19,41 @@
                         <div>Followers</div>
                     </div>
                 </div>
-                <button id="settings" style="margin-left: auto;">
-                    <img id="gearicon" src="images/gear-round-svgrepo-com.svg" alt="gearicon.svg" style="height: 100px; width: 100px;">
+                <button id="settings" style="margin-left: auto; height: 3em;">
+                    <img id="gearicon" src="images/gear-round-svgrepo-com.svg" alt="gearicon.svg" style="height: 100%; width: 100%;">
                 </button>
             </div>
-            Places Visited
+            <h2>Places Visited</h2>
             <img id="world map" src="images/worldmap.jpg">
-            Favorite Cards
-            <ul id="navigation" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+            <h2>Favorite Cards</h2>
+            <ul id="cards" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
                 <li class="card">New York</li>
                 <li class="card">Hong Kong</li>
                 <li class="card">London</li>
                 <li class="card">Boston</li>
                 <li class="card">Sydney</li>
             </ul>
-            Achievements
-            <ul id="navigation" style="list-style-type: none; margin: 0; padding: 0;">
+            <h2>Achievements</h2>
+            <ul id="achievements" style="min-height: 15em; list-style-type: none; margin: 0; padding: 0; font-size: x-small; display: flex; flex-direction: column; justify-content: space-around;">
                 <li>Globe Trotter - visited at least 5 countries</li>
-                <li>Landmarker - taken photo of 200 landmarks</li>
+                <li>Landmarker - taken photo of 100 landmarks</li>
                 <li>100%er - visited all the landmarks in a city</li>
-                <li>1000%er - visited all the landmarks in a country (ULTRA RARE)</li>
-                <li>100000%er - visited all the landmarks in the world (IMPOSSIBLE)</li>
+                <li>1000000%er - visited all the landmarks in a country (ULTRA RARE)</li>
+                <li>1000000000000000%er - visited all the landmarks in the world (IMPOSSIBLE)</li>
                 <li>Out of this world - visited a landmark in space</li>
             </ul>
-            Countries
-            <ul></ul>
-            <ul id="navigation" style="list-style-type: none; margin: 0; padding: 0;">
-                <li>Profile</li>
-                <li>Map</li>
-                <li>Cards</li>
-                <li>Camera</li>
+            <h2>Countries</h2>
+            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-direction: column;">
+                <li>United States<strong style="margin-left: 10px;">10%</strong><progress max="100" value="10" style="margin-left: 40px;"></progress></li>
+                <li>Canada<strong style="margin-left: 10px;">10%</strong><progress max="100" value="10" style="margin-left: 40px;"></progress></li>
+                <li>Mexico<strong style="margin-left: 10px;">10%</strong><progress max="100" value="10" style="margin-left: 40px;"></progress></li>
             </ul>
-        </div>
+            <ul id="navigation" style="margin-top: 2em;">
+                <li><a href="profile_mockup.html"><img src="images/profile-svgrepo-com.svg" alt="profile.svg">Profile</a></li>
+                <li><a href="map_mockup.html"><img src="images/globe-svgrepo-com.svg" alt="globe.svg">Map</a></li>
+                <li><a href="cards_mockup.html"><img src="images/cards-svgrepo-com.svg" alt="cards.svg">Cards</a></li>
+                <li><a><img src="images/camera-svgrepo-com.svg" alt="camera.svg">Camera</a></li>            </ul>
+        </main>
         <script src="" async defer></script>
     </body>
 </html>
